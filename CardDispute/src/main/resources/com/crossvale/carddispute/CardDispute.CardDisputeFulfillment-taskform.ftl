@@ -48,13 +48,21 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("chargeback");
+					myInputs[i] = document.getElementById("fraud");
+					i++;
+					myInputs[i] = document.getElementById("amount");
 					i++;
 
 
 		var j=0;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid chargeback");
+							alert("Please enter valid fraud");
+							myInputs[j].focus();
+							return false;
+						}
+					j++;
+						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
+							alert("Please enter valid amount");
 							myInputs[j].focus();
 							return false;
 						}
@@ -216,9 +224,14 @@
 	    <input type="hidden" name="processId" value="${process.id}"/>
 		<fieldset>
             <legend>Process inputs</legend>
-                            		<label for="name">chargeback</label>
+                            		<label for="name">fraud</label>
                             		<div class="div_texbox">
-                              		<input name="chargeback" type="text" class="textbox" id="chargeback" value="" />
+                              		<input name="fraud" type="text" class="textbox" id="fraud" value="" />
+                            		</div>
+              	
+                            		<label for="name">amount</label>
+                            		<div class="div_texbox">
+                              		<input name="amount" type="text" class="textbox" id="amount" value="" />
                             		</div>
               	
 
