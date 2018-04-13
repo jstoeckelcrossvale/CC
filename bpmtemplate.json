@@ -39,7 +39,7 @@
 		"source": {
 			"contextDir": "CardDispute",
 			"git": {
-				"ref": "dev",
+				"ref": "master",
 				"uri": "https://github.com/crossvale-inc/panorama-bpm.git"
 			},
 			"sourceSecret": {
