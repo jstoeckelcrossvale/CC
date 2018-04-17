@@ -14,6 +14,10 @@
 			<name>Guvnor M2 Repo</name>
 			<url>http://localhost:8080/business-central/maven2/</url>
 		</repository>
+		<repository>
+			<id>JBoss repository</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -23,13 +27,11 @@
 			<artifactId>kie-api</artifactId>
 			<version>7.5.0.Final</version>
 		</dependency>
-		<!--  
 		<dependency>
-			<groupId>org.jbpm.process.workitem</groupId>
-			<artifactId>parser-task</artifactId>
-			<version>1.0</version>
-			<scope>compile</scope>
-		</dependency> -->
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-workitems-parser</artifactId>
+			<version>7.4.1.Final</version>
+		</dependency>
 	</dependencies>
 
 	<build>
