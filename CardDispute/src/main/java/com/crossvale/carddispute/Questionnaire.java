@@ -9,12 +9,12 @@ public class Questionnaire implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   //@org.kie.api.definition.type.Label("question")
+   @org.kie.api.definition.type.Label("question")
    private java.lang.String question;
-   //@org.kie.api.definition.type.Label("nextQuestionCode")
+   @org.kie.api.definition.type.Label("nextQuestionCode")
    private java.lang.String nextQuestionCode;
 
-   //@org.kie.api.definition.type.Label(value = "questionCode")
+   @org.kie.api.definition.type.Label(value = "questionCode")
    private java.lang.String questionCode;
 
    public Questionnaire()
