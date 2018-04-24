@@ -21,6 +21,7 @@
 		</repository>
 	</repositories>
 
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.kie/kie-api -->
 		<dependency>
@@ -33,6 +34,24 @@
 			<groupId>org.jbpm</groupId>
 			<artifactId>jbpm-workitems-parser</artifactId>
 			<version>7.4.1.Final</version>
+		</dependency>
+
+		<!-- Realtime Decision Server dependencies -->
+		<dependency>
+			<groupId>org.kie.server</groupId>
+			<artifactId>kie-server-client</artifactId>
+			<version>7.7.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kie.server</groupId>
+			<artifactId>kie-server-api</artifactId>
+			<version>7.7.0.Final</version>
+		</dependency>
+		<!-- Red Hat JBoss BRMS dependency. -->
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>
+			<version>6.5.0.Final</version>
 		</dependency>
 	</dependencies>
 
