@@ -1,0 +1,13 @@
+JarIndex-Version: 1.0
+
+jbpm-workitems-parser-7.4.1.Final.jar
+META-INF
+META-INF/maven
+META-INF/maven/org.jbpm
+META-INF/maven/org.jbpm/jbpm-workitems-parser
+org
+org/jbpm
+org/jbpm/process
+org/jbpm/process/workitem
+org/jbpm/process/workitem/parser
+

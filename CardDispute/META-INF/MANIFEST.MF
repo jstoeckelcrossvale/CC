@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Implementation-Title: jBPM :: WorkItems :: Parser
+Implementation-Version: 7.4.1.Final
+Java-Version: 1.8.0_131
+Built-By: jenkins
+Scm-Connection: scm:git:https://github.com:kiegroup/jbpm.git/jbpm-work
+ items/jbpm-workitems-parser
+Specification-Vendor: JBoss by Red Hat
+Os-Arch: amd64
+Specification-Title: jBPM :: WorkItems :: Parser
+Implementation-Vendor-Id: org.jbpm
+Java-Vendor: Oracle Corporation
+Os-Name: Linux
+Scm-Url: https://github.com/kiegroup/jbpm/jbpm-workitems/jbpm-workitem
+ s-parser
+Implementation-Vendor: JBoss by Red Hat
+Os-Version: 3.10.0-514.el7.x86_64
+Scm-Revision: 8bd3bb6ae20ae8e8cdd79a2547c5c0d5be3c665d
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_131
+Specification-Version: 7.4
+Implementation-URL: http://www.jboss.org/jbpm/jbpm-workitems/jbpm-work
+ items-parser/
+
