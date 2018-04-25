@@ -1,6 +1,5 @@
 package com.crossvale.carddispute;
 
-
 rule "Question 1"
 	no-loop true
 	dialect "mvel"
@@ -258,6 +257,7 @@ end
 rule "Question 24"
 	no-loop true
 	dialect "mvel"
+	ruleflow-group "questionnaire"
 	when
 		disputesQuestionnaire : Questionnaire( questionCode == "24")
 	then
