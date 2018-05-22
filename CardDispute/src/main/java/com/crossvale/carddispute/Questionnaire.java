@@ -28,8 +28,11 @@ public class Questionnaire implements java.io.Serializable
    @org.kie.api.definition.type.Label("answerList")
    private java.lang.String answerList;
 
-   @org.kie.api.definition.type.Label(value = "questionLine2")
+   @org.kie.api.definition.type.Label("questionLine2")
    private java.lang.String questionLine2;
+
+   @org.kie.api.definition.type.Label(value = "answerListLine2")
+   private java.lang.String answerListLine2;
 
    public Questionnaire()
    {
@@ -105,10 +108,21 @@ public class Questionnaire implements java.io.Serializable
       this.questionLine2 = questionLine2;
    }
 
+   public java.lang.String getAnswerListLine2()
+   {
+      return this.answerListLine2;
+   }
+
+   public void setAnswerListLine2(java.lang.String answerListLine2)
+   {
+      this.answerListLine2 = answerListLine2;
+   }
+
    public Questionnaire(java.lang.String question,
          java.lang.String nextQuestionCode, java.lang.String questionCode,
          java.lang.String answer, java.lang.String nextQuestion,
-         java.lang.String answerList, java.lang.String questionLine2)
+         java.lang.String answerList, java.lang.String questionLine2,
+         java.lang.String answerListLine2)
    {
       this.question = question;
       this.nextQuestionCode = nextQuestionCode;
@@ -117,6 +131,7 @@ public class Questionnaire implements java.io.Serializable
       this.nextQuestion = nextQuestion;
       this.answerList = answerList;
       this.questionLine2 = questionLine2;
+      this.answerListLine2 = answerListLine2;
    }
 
 }
