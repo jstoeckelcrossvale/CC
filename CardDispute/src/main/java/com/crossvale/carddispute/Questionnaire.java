@@ -19,8 +19,20 @@ public class Questionnaire implements java.io.Serializable
    @org.kie.api.definition.type.Label("questionCode")
    private java.lang.String questionCode;
 
-   @org.kie.api.definition.type.Label(value = "previousQuestionCode")
-   private java.lang.String previousQuestionCode;
+   @org.kie.api.definition.type.Label("answer")
+   private java.lang.String answer;
+
+   @org.kie.api.definition.type.Label("nextQuestion")
+   private java.lang.String nextQuestion;
+
+   @org.kie.api.definition.type.Label("answerList")
+   private java.lang.String answerList;
+
+   @org.kie.api.definition.type.Label("questionLine2")
+   private java.lang.String questionLine2;
+
+   @org.kie.api.definition.type.Label(value = "answerListLine2")
+   private java.lang.String answerListLine2;
 
    public Questionnaire()
    {
@@ -56,24 +68,70 @@ public class Questionnaire implements java.io.Serializable
       this.questionCode = questionCode;
    }
 
-   public java.lang.String getPreviousQuestionCode()
+   public java.lang.String getAnswer()
    {
-      return this.previousQuestionCode;
+      return this.answer;
    }
 
-   public void setPreviousQuestionCode(java.lang.String previousQuestionCode)
+   public void setAnswer(java.lang.String answer)
    {
-      this.previousQuestionCode = previousQuestionCode;
+      this.answer = answer;
+   }
+
+   public java.lang.String getNextQuestion()
+   {
+      return this.nextQuestion;
+   }
+
+   public void setNextQuestion(java.lang.String nextQuestion)
+   {
+      this.nextQuestion = nextQuestion;
+   }
+
+   public java.lang.String getAnswerList()
+   {
+      return this.answerList;
+   }
+
+   public void setAnswerList(java.lang.String answerList)
+   {
+      this.answerList = answerList;
+   }
+
+   public java.lang.String getQuestionLine2()
+   {
+      return this.questionLine2;
+   }
+
+   public void setQuestionLine2(java.lang.String questionLine2)
+   {
+      this.questionLine2 = questionLine2;
+   }
+
+   public java.lang.String getAnswerListLine2()
+   {
+      return this.answerListLine2;
+   }
+
+   public void setAnswerListLine2(java.lang.String answerListLine2)
+   {
+      this.answerListLine2 = answerListLine2;
    }
 
    public Questionnaire(java.lang.String question,
          java.lang.String nextQuestionCode, java.lang.String questionCode,
-         java.lang.String previousQuestionCode)
+         java.lang.String answer, java.lang.String nextQuestion,
+         java.lang.String answerList, java.lang.String questionLine2,
+         java.lang.String answerListLine2)
    {
       this.question = question;
       this.nextQuestionCode = nextQuestionCode;
       this.questionCode = questionCode;
-      this.previousQuestionCode = previousQuestionCode;
+      this.answer = answer;
+      this.nextQuestion = nextQuestion;
+      this.answerList = answerList;
+      this.questionLine2 = questionLine2;
+      this.answerListLine2 = answerListLine2;
    }
 
 }
